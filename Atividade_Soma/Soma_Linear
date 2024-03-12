@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int num1 = 1;
+int num2 = 2;
+
+int main(void) {
+
+int soma = num1 + num2;
+
+printf("A soma de %d e %d é %d", num1, num2, soma);
+return 0;
+}
