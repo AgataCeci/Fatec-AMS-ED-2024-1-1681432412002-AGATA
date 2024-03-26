@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+float preco, desconto;
+
+float pegaDesconto(float *preco, float *desconto){
+  
+  float val_final = *preco - (*preco * (*desconto/100));
+  return val_final;
+
+}
+
+int main(void) {
+ 
+  printf("Digite o preço do produto: \n");
+  scanf("%f", &preco);
+
+  printf("\n Digite o desconto em %: \n");
+  scanf("%f", &desconto);
+  
+  printf("\n O valor inicial é %.2f, o desconto é (%) %.2f e o valor final do produto é %.2f", preco, desconto, pegaDesconto(&preco, &desconto));
+  
+  return 0;
+}
