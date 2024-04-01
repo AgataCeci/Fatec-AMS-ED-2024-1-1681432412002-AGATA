@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+float notas[5];
+float value, aux, maiorNota;
+
+float pegaMaiorNota(float notas[],float *aux, float *maiorNota){
+    for (int i=0; i<5; i++){
+    for (int j=0; j<5; j++){
+      if(notas[i] < notas[j]){
+        *aux = notas[i];
+          notas[i] = notas[j];
+          notas[j] = *aux;
+      }
+    }
+  }
+
+  *maiorNota = notas[4];
+
+  return *maiorNota;
+}
+
+int main(void) {
+
+  for (int i = 0; i < 5; i++) {
+    printf("\nDigite as notas: \n");
+    scanf("%f", &value);
+    notas[i] = value;
+  }
+
+  printf("\n");
+
+  printf("A maior nota é %.2f", pegaMaiorNota(notas, &aux, &maiorNota));
+
+  return 0;
+
+}
