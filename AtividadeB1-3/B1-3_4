@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+float notas[5];
+float value;
+
+void notasMulti(float notas[]){
+  
+    for (int i=0; i<5; i++){
+      printf("%.2f\n", notas[i]*2);
+  }
+
+}
+
+int main(void) {
+
+  for (int i = 0; i < 5; i++) {
+    printf("\nDigite as notas: \n");
+    scanf("%f", &value);
+    notas[i] = value;
+  }
+
+  printf("\n");
+
+  printf("As notas vezes 2 são: \n");
+  
+  notasMulti(notas);
+  
+  return 0;
+
+}
