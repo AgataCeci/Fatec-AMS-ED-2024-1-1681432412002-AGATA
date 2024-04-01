@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+float notas[5];
+float value, soma;
+
+float somaNotas(float notas[],float *soma){
+
+  *soma = notas[0]+notas[1]+notas[2]+notas[3]+notas[4];
+
+  return *soma;
+}
+
+int main(void) {
+
+  for (int i = 0; i < 5; i++) {
+    printf("\nDigite as notas: \n");
+    scanf("%f", &value);
+    notas[i] = value;
+  }
+
+  printf("\n");
+
+  printf("A soma de todas as notas é é %.2f", somaNotas(notas, &soma));
+
+  return 0;
+
+}
