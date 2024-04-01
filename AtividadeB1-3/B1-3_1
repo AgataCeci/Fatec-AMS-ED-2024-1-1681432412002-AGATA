@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+float notas[5];
+float value;
+
+int main(void) {
+
+  for (int i = 0; i < 5; i++) {
+    printf("\nDigite as notas: \n");
+    scanf("%f", &value);
+    notas[i] = value;
+  }
+
+  printf("\n");
+
+  for (int i=0; i<5; i++){
+    printf("%.2f - ", notas[i]);
+  }
+
+  return 0;
+  
+}
