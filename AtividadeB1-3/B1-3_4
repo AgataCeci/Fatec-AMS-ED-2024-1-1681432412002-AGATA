@@ -2,11 +2,12 @@
 
 float notas[5];
 float value;
+int valQual;
 
-void notasMulti(float notas[]){
+void notasMulti(float notas[], int *vaQual){
   
     for (int i=0; i<5; i++){
-      printf("%.2f\n", notas[i]*2);
+      printf("%.2f\n", notas[i]**vaQual);
   }
 
 }
@@ -19,11 +20,14 @@ int main(void) {
     notas[i] = value;
   }
 
+  printf("\nDigite um valor qualquer: \n");
+  scanf("%d", &valQual);
+
   printf("\n");
 
-  printf("As notas vezes 2 são: \n");
+  printf("As notas vezes %d são: \n", valQual);
   
-  notasMulti(notas);
+  notasMulti(notas, &valQual);
   
   return 0;
 
