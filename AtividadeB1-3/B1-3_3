@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 float notas[5];
-float value, soma;
+float value;
 
-float somaNotas(float notas[],float *soma){
-
-  *soma = notas[0]+notas[1]+notas[2]+notas[3]+notas[4];
-
-  return *soma;
+void imprimeArray(float notas[]){
+    for (int i=0; i<5; i++){
+        printf("Nota %d: %.2f\n", i+1, notas[i]);
+  }
 }
 
 int main(void) {
@@ -19,9 +18,13 @@ int main(void) {
   }
 
   printf("\n");
+  
+  printf("As notas são: \n");
 
-  printf("A soma de todas as notas é é %.2f", somaNotas(notas, &soma));
-
+  printf("\n");
+  
+  imprimeArray(notas);
+  
   return 0;
 
 }
