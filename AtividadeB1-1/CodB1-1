@@ -1,1 +1,33 @@
+#include <stdio.h>
 
+int numeroInteiro[5];
+int value;
+int aux;
+
+int main(void) {
+
+  for (int i=0; i<5; i++){
+    printf("\nDigite um número inteiro positivo: \n");
+    scanf("%d", &value);
+    numeroInteiro[i] = value;
+  }
+  
+  for (int i=0; i<5; i++){
+    for (int j=0; j<5; j++){
+      if(numeroInteiro[i] < numeroInteiro[j]){
+        aux = numeroInteiro[i];
+        numeroInteiro[i] = numeroInteiro[j];
+        numeroInteiro[j] = aux;
+      }
+    }
+  }
+  
+  printf("\n");
+
+  for (int i=0; i<5; i++){
+    printf("%d", numeroInteiro[i]);
+  }
+  
+  return 0;
+
+}
