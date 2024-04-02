@@ -1,22 +1,13 @@
 #include <stdio.h>
 
 float notas[5];
-float value, aux, maiorNota;
+float value, soma;
 
-float pegaMaiorNota(float notas[],float *aux, float *maiorNota){
-    for (int i=0; i<5; i++){
-    for (int j=0; j<5; j++){
-      if(notas[i] < notas[j]){
-        *aux = notas[i];
-          notas[i] = notas[j];
-          notas[j] = *aux;
-      }
-    }
-  }
+float somaNotas(float notas[],float *soma){
 
-  *maiorNota = notas[4];
+  *soma = notas[0]+notas[1]+notas[2]+notas[3]+notas[4];
 
-  return *maiorNota;
+  return *soma;
 }
 
 int main(void) {
@@ -29,7 +20,7 @@ int main(void) {
 
   printf("\n");
 
-  printf("A maior nota é %.2f", pegaMaiorNota(notas, &aux, &maiorNota));
+  printf("A soma de todas as notas é é %.2f", somaNotas(notas, &soma));
 
   return 0;
 
