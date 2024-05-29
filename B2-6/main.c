@@ -21,3 +21,5 @@ int main(void) {
  return 0;
   
 }
+
+Tempo de execução: 270ms
