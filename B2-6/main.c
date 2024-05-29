@@ -22,4 +22,4 @@ int main(void) {
   
 }
 
-Tempo de execução: 270ms
+//Tempo de execução: 270ms
