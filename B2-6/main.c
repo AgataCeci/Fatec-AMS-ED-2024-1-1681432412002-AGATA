@@ -1,3 +1,12 @@
+/*------------------------------------------------------------------------*/
+/*   FATEC-São Caetano do Sul                 Estrutura de Dados          */
+/*                                                                        */
+/*                         Ágata Cesquim                                  */
+/*     Objetivo: Inserir no Array                                         */
+/*                                                                        */
+/*                                                        Data:28/05/2024 */
+/*------------------------------------------------------------------------*/ 
+
 #include <stdio.h>
 
 int main(void) {
