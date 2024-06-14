@@ -1,3 +1,15 @@
+/*------------------------------------------------------------------------*/
+/*   FATEC-São Caetano do Sul                 Estrutura de Dados          */
+/*                                                                        */
+/*                         Ágata Cesquim                                  */
+/*     Objetivo: Criar um programa em C que use ponteiros para manipular  */
+*/               variáveis e funções.                                     */
+*/                                                                        */
+/*                                                                        */
+/*                                                        Data:12/03/2024 */
+/*------------------------------------------------------------------------*/ 
+
+
 #include <stdio.h>
 
 float preco, desconto;
