@@ -1,0 +1,17 @@
+Busca Linear:
+
+No pior caso, o elemento está na última posição ou não está no array.
+Número de iterações no pior caso: n
+Complexidade de tempo: 𝑂(𝑛)
+
+Busca Linear em Ordem:
+
+O algoritmo para quando encontra um número maior que o procurado.
+No pior caso, o elemento não está no array e o algoritmo percorre todos os elementos.
+Complexidade de tempo: 𝑂(𝑛)
+
+Busca Binária:
+
+No pior caso, o array é repetidamente dividido ao meio.
+Número de divisões: log2(𝑛)
+Complexidade de tempo: 𝑂(log 𝑛)
