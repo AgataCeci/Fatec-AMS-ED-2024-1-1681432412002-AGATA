@@ -14,11 +14,11 @@
 int linearSearchOrdered(int arr[], int n, int x) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == x)
-            return i; // Element found
+            return i; 
         else if (arr[i] > x)
-            break; // Element is not in the array due to sorted nature
+            break; 
     }
-    return -1; // Element not found
+    return -1; 
 }
 
 int main() {
